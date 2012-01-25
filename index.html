@@ -8,7 +8,15 @@
 		color:#eee;
 		background-color:#7D7A73;
 	}
-	#fb-root{
+	
+	#container {
+		width:960px;
+		margin:0 auto;
+	}
+	#header {
+		float:left;
+	}
+	.social, #fb-root{
 		display:inline;
 	}
 </style>
@@ -25,19 +33,12 @@
 	</head>
 	<body>
 		<div id="container">
-			<h1>Sample TimeLine Slider</h1>
+			<h1 id="header">Sample TimeLine Slider</h1>
 			<div class="social">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-via="danest">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=207998685896226";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
 				<div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-font="verdana"></div>
+			<div style="clear:both"></div>
 			<div class="timeline-holder">
 				<ul class="timeline-items">
 					<li><img src="http://farm8.staticflickr.com/7148/6585609951_8e8558c95d_o.jpg" width="150" height="150" ></li>
@@ -56,11 +57,19 @@
 				</div>
 			</div>
 			<br />
-			You should follow me on <a href="http://www.twitter.com/danest">Twitter @danest</a> <a href="https://twitter.com/danest" class="twitter-follow-button" data-show-count="false">Follow @danest</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			You should follow me on <a href="http://www.twitter.com/danest">Twitter</a> <a href="https://twitter.com/danest" class="twitter-follow-button" data-show-count="false">Follow @danest</a>
+
 			<div id="getting-started">
 				<p>TODO: How to set up the plugin and run it and set up github download links</p>
 			</div>	
 		</div>
 	</body>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=207998685896226";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </html>
