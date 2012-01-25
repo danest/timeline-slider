@@ -1,0 +1,48 @@
+<hmtl>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Timeline Slider</title>
+<link rel="stylesheet" href="tl-styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<style type="text/css" media="screen">
+	body{
+		color:#eee;
+		background-color:#7D7A73;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="timelineSlider.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+	//this makes sure the images are loaded first..different then document ready
+	$(window).load(function(){
+		$('.timeline-items').TimeLineSlider({transition:'fade'});
+		
+	});
+</script>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Sample TimeLine Slider</h1>
+			<div class="timeline-holder">
+				<ul class="timeline-items">
+					<li><img src="http://farm8.staticflickr.com/7148/6585609951_8e8558c95d_o.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm8.staticflickr.com/7006/6758866845_5ba8769a0c_z.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm8.staticflickr.com/7021/6531892905_852eae7d97.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm1.staticflickr.com/102/262989384_9cadd4bc72_z.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm4.staticflickr.com/3447/3705350859_27380fb570_z.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm7.staticflickr.com/6112/6349185796_162208e5be_z.jpg" width="150" height="150" ></li>
+					<li><img src="http://farm7.staticflickr.com/6213/6333395084_4aeeb16115_z.jpg" width="150" height="150"></li>
+				</ul>
+			</div>
+			<div id="featured">
+				<span class="highlight"></span>
+				<div class="img">
+					<img src="http://farm8.staticflickr.com/7148/6585609951_8e8558c95d_o.jpg" width="350" height="350">
+				</div>
+			</div>
+			<div id="getting-started">
+				<p>TODO: How to set up the plugin and run it</p>
+			</div>	
+		</div>
+	</body>
+</html>
